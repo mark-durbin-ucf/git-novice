@@ -4,11 +4,7 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
-Wolfman and Dracula have been hired by Universal Missions (a space
-services spinoff from Euphoric State University) to investigate if it
-is possible to send their next planetary lander to Mars.  They want to
-be able to work on the plans at the same time, but they have run into
-problems doing this in the past.  If they take turns, each one will
+How can teams work on the same coding project?  If they take turns, each one will
 spend a lot of time waiting for the other to finish, but if they work
 on their own copies and email changes back and forth things will be
 lost, overwritten, or duplicated.
@@ -47,7 +43,5 @@ to be shared can and should be stored in a version control system.
 
 > ## Prerequisites
 >
-> In this lesson we use Git from the Unix Shell.
-> Some previous experience with the shell is expected,
-> *but isn't mandatory*.
+> In this lesson we use Git from the Unix Shell. Please do not be intimidated. All of the commands will be provided for you, and it is suggested that you copy/paste the commands if you are unfamiliar with the Unix Shell, so that you can keep pace with the lesson and focus on learning Git.
 {: .prereq}
