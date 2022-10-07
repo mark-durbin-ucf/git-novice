@@ -283,7 +283,7 @@ If we break it down into pieces:
 After reviewing our change, it's time to commit it:
 
 ~~~
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add notes about Mars' moons"
 ~~~
 {: .language-bash}
 
@@ -536,7 +536,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > {: .language-bash}
 > ~~~
 > 005937f (HEAD -> main) Discuss concerns about Mars' climate for my hair
-> 34961b1 Add concerns about effects of Mars' moons on Wolfman
+> 34961b1 Add notes about Mars' moons
 > f22b25e Start notes on Mars as a base
 > ~~~
 > {: .output}
@@ -614,118 +614,6 @@ we first need to add the changed files to the staging area
 repository (`git commit`):
 
 ![The Git Commit Workflow](../fig/git-committing.svg)
-
-> ## Choosing a Commit Message
->
-> Which of the following commit messages would be most appropriate for the
-> last commit made to `mars.txt`?
->
-> 1. "Changes"
-> 2. "Added line 'But the Mummy will appreciate the lack of humidity' to mars.txt"
-> 3. "Discuss effects of Mars' climate on the Mummy"
->
-> > ## Solution
-> > Answer 1 is not descriptive enough, and the purpose of the commit is unclear;
-> > and answer 2 is redundant to using "git diff" to see what changed in this commit;
-> > but answer 3 is good: short, descriptive, and imperative.
-> {: .solution}
-{: .challenge}
-
-> ## Committing Changes to Git
->
-> Which command(s) below would save the changes of `myfile.txt`
-> to my local Git repository?
->
-> 1. ~~~
->    $ git commit -m "my recent changes"
->    ~~~
->    {: .language-bash}
-> 2. ~~~
->    $ git init myfile.txt
->    $ git commit -m "my recent changes"
->    ~~~
->    {: .language-bash}
-> 3. ~~~
->    $ git add myfile.txt
->    $ git commit -m "my recent changes"
->    ~~~
->    {: .language-bash}
-> 4. ~~~
->    $ git commit -m myfile.txt "my recent changes"
->    ~~~
->    {: .language-bash}
->
-> > ## Solution
-> >
-> > 1. Would only create a commit if files have already been staged.
-> > 2. Would try to create a new repository.
-> > 3. Is correct: first add the file to the staging area, then commit.
-> > 4. Would try to commit a file "my recent changes" with the message myfile.txt.
-> {: .solution}
-{: .challenge}
-
-> ## Committing Multiple Files
->
-> The staging area can hold changes from any number of files
-> that you want to commit as a single snapshot.
->
-> 1. Add some text to `mars.txt` noting your decision
-> to consider Venus as a base
-> 2. Create a new file `venus.txt` with your initial thoughts
-> about Venus as a base for you and your friends
-> 3. Add changes from both files to the staging area,
-> and commit those changes.
->
-> > ## Solution
-> >
-> > The output below from `cat mars.txt` reflects only content added during 
-> > this exercise. Your output may vary.
-> > 
-> > First we make our changes to the `mars.txt` and `venus.txt` files:
-> > ~~~
-> > $ nano mars.txt
-> > $ cat mars.txt
-> > ~~~
-> > {: .language-bash}
-> > ~~~
-> > Maybe I should start with a base on Venus.
-> > ~~~
-> > {: .output}
-> > ~~~
-> > $ nano venus.txt
-> > $ cat venus.txt
-> > ~~~
-> > {: .language-bash}
-> > ~~~
-> > Venus is a nice planet and I definitely should consider it as a base.
-> > ~~~
-> > {: .output}
-> > Now you can add both files to the staging area. We can do that in one line:
-> >
-> > ~~~
-> > $ git add mars.txt venus.txt
-> > ~~~
-> > {: .language-bash}
-> > Or with multiple commands:
-> > ~~~
-> > $ git add mars.txt
-> > $ git add venus.txt
-> > ~~~
-> > {: .language-bash}
-> > Now the files are ready to commit. You can check that using `git status`. If you are ready to commit use:
-> > ~~~
-> > $ git commit -m "Write plans to start a base on Venus"
-> > ~~~
-> > {: .language-bash}
-> > ~~~
-> > [main cc127c2]
-> >  Write plans to start a base on Venus
-> >  2 files changed, 2 insertions(+)
-> >  create mode 100644 venus.txt
-> > ~~~
-> > {: .output}
-> {: .solution}
-{: .challenge}
 
 > ## `bio` Repository
 >
