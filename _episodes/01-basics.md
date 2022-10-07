@@ -58,20 +58,6 @@ metadata make up a [repository]({{ page.root }}{% link reference.md %}#repositor
 Repositories can be kept in sync across different computers, facilitating
 collaboration among different people.
 
-> ## The Long History of Version Control Systems
->
-> Automated version control systems are nothing new.
-> Tools like [RCS](https://en.wikipedia.org/wiki/Revision_Control_System), [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System), or [Subversion](https://en.wikipedia.org/wiki/Apache_Subversion) have been around since the early 1980s and are used by 
-> many large companies.
-> However, many of these are now considered legacy systems (i.e., outdated) due to various 
-> limitations in their capabilities.
-> More modern systems, such as Git and [Mercurial](https://swcarpentry.github.io/hg-novice/),
-> are *distributed*, meaning that they do not need a centralized server to host the repository.
-> These modern systems also include powerful merging tools that make it possible for 
-> multiple authors to work on
-> the same files concurrently.
-{: .callout}
-
 > ## Paper Writing
 >
 > *   Imagine you drafted an excellent paragraph for a paper you are writing, but later ruin 
