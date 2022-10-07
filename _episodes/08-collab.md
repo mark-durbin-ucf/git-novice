@@ -42,17 +42,17 @@ The Collaborator doesn't want to overwrite her own version of `planets.git`, so
 needs to clone the Owner's repository to a different location than her own 
 repository with the same name.
  
-To clone the Owner's repo into her `Desktop` folder, the Collaborator enters:
+To clone the Owner's repo into her home folder, the Collaborator enters:
 
 ~~~
-$ git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets
+$ git clone git@github.com:YOUR_USER/planets.git ~/other_user-planets
 ~~~
 {: .language-bash}
 
-Replace 'vlad' with the Owner's username.
+Replace 'other_user' with the Owner's username.
 
 If you choose to clone without the clone path
-(`~/Desktop/vlad-planets`) specified at the end,
+(`~/Desktop/other_user-planets`) specified at the end,
 you will clone inside your own planets folder!
 Make sure to navigate to the `Desktop` folder first.
 
@@ -62,7 +62,7 @@ The Collaborator can now make a change in her clone of the Owner's repository,
 exactly the same way as we've been doing before:
 
 ~~~
-$ cd ~/Desktop/vlad-planets
+$ cd ~/Desktop/other_user-planets
 $ nano pluto.txt
 $ cat pluto.txt
 ~~~
@@ -99,7 +99,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/vlad/planets.git
+To https://github.com/other_user/planets.git
    9272da5..29aba7c  main -> main
 ~~~
 {: .output}
@@ -157,7 +157,7 @@ remote: Counting objects: 100% (4/4), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/vlad/planets
+From https://github.com/other_user/planets
  * branch            main     -> FETCH_HEAD
    9272da5..29aba7c  main     -> origin/main
 Updating 9272da5..29aba7c
