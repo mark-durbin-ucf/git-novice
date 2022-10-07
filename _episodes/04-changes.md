@@ -42,6 +42,8 @@ Cold and dry, but everything is my favorite color
 ~~~
 {: .output}
 
+Notice the commands available in nano below where your typed input is displayed. The "^" symbol is for the CTRL key. Use <kbd>CTRL+X</kbd> to exit. Nano may ask you to confirm the file name. Confirm it as mars.txt.
+
 Let's first verify that the file was properly created by running the list command (`ls`):
 
 
