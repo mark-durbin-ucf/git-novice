@@ -15,15 +15,18 @@ layout: reference
 
 {:auto_ids}
 add
-:   To stage changes that you wish to commit. You can commit all the files that have been modified since your last commit, or just one. The `git add` command is used to stage changes you wish to commit.
+:   To stage changes that you wish to commit. You can commit all the files that have been modified since your last commit, or just one. The `git add` command is used to stage changes you wish to commit. [View documentation for git add command](https://git-scm.com/docs/git-add)
 
 branch
-:   A branch in Git is a lightweight movable pointer to a commit. While working on a project, collaborators may make numerous branches to separate workflows such as feature development or bug fixes.
+:   A branch in Git is a lightweight movable pointer to a commit. While working on a project, collaborators may make numerous branches to separate workflows such as feature development or bug fixes. The `git branch` command is used to create new branches. [View documentation for git branch command](https://git-scm.com/docs/git-branch)
 
 changeset
 :   A group of changes to one or more files that are or will be added
     to a single [commit](#commit) in a [version control](#version-control)
     [repository](#repository).
+    
+checkout
+:   To load the project state at a specific point in its history, such as a [branch](#branch) or [commit](#commit). [View documentation for git checkout command](https://git-scm.com/docs/git-checkout)
 
 commit
 :   To record the current state of a set of files (a [changeset](#changeset))
@@ -31,6 +34,7 @@ commit
     the result of committing, i.e. a recorded changeset in a repository.
     If a commit contains changes to multiple files,
     all of the changes are recorded together. The `git commit` command is used to create a commit.
+    [View documentation for git commit command](https://git-scm.com/docs/git-commit)
 
 conflict
 :   A change made by one user of a [version control system](#version-control)
@@ -44,17 +48,17 @@ HTTP
 
 merge
 :   (a repository): To reconcile two sets of changes to a
-    [repository](#repository). The `git merge` command is used to merge the sets of changes.
+    [repository](#repository). The `git merge` command is used to merge the sets of changes. [View documentation for git merge command](https://git-scm.com/docs/git-merge)
 
 protocol
 :   A set of rules that define how one computer communicates with another.
     Common protocols on the Internet include [HTTP](#http) and [SSH](#ssh).
 
 pull
-:   To bring in updates from a [remote](#remote) [repository](#repository) repository to a local repository. The `git pull` command is used to pull changes from the associated remote branch to a branch in a local repository.
+:   To bring in updates from a [remote](#remote) [repository](#repository) repository to a local repository. The `git pull` command is used to pull changes from the associated remote branch to a branch in a local repository. [View documentation for git pull command](https://git-scm.com/docs/git-pull)
 
 push
-:   To send updates from a local [repository](#repository) to a remote repository. The `git push` command is used to upload local [repository](#repository) content to a remote repository.
+:   To send updates from a local [repository](#repository) to a remote repository. The `git push` command is used to upload local [repository](#repository) content to a remote repository. [View documentation for git push command](https://git-scm.com/docs/git-push)
 
 remote
 :   (of a repository) A version control [repository](#repository) connected to another,
