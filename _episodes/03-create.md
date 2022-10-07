@@ -20,7 +20,7 @@ First, let's a new directory in the home directory folder for our work (`mkdir` 
 
 ~~~
 $ mkdir ~/planets
-$ cd planets
+$ cd ~/planets
 ~~~
 {: .language-bash}
 
