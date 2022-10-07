@@ -37,7 +37,7 @@ Multiple users can make changes to the same file in your project, but this can c
 
 ![Multiple Versions Can be Merged](../fig/merge.svg)
 
-Git is a powerful tool for tracking changes and developing new features in coding projects. Multiple collaborators can create <strong>[branch]({{ page.root }}{% link reference.md %}#branch))</strong> to work on a single project simultaneously, and then <strong>merge</strong> the different versions together. This is a standard practice in modern software development. Repositories can be hosted centrally in places like [GitHub](https://github.com) so that collaborators can easily sync changes by <strong>[pulling]({{ page.root }}{% link reference.md %}#pull))</strong> down the latest commits to their local copy of the repository.
+Git is a powerful tool for tracking changes and developing new features in coding projects. Multiple collaborators can create <strong>[branches]({{ page.root }}{% link reference.md %}#branch))</strong> to work on a single project simultaneously, and then <strong>merge</strong> the different versions together. This is a standard practice in modern software development. Repositories can be hosted centrally in places like [GitHub](https://github.com) so that collaborators can easily sync changes by <strong>[pulling]({{ page.root }}{% link reference.md %}#pull))</strong> down the latest commits to their local copy of the repository.
 
 Imagine you drafted an excellent paragraph for a paper you are writing, but later you 
 select the paragraph and delete it. How would you retrieve the *excellent* version of your conclusion? Is it even possible?
