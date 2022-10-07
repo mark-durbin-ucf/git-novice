@@ -12,24 +12,22 @@ keypoints:
 ---
 
 When we use Git on a new computer for the first time,
-we need to configure a few things. Below are a few examples
-of configurations we will set as we get started with Git:
+we need to configure a few things:
 
 *   our name and email address,
 *   what our preferred text editor is,
 *   and that we want to use these settings globally (i.e. for every project).
 
 On a command line, Git commands are written as `git verb options`,
-where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. So here is how
-Dracula sets up his new laptop:
+where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. Here is how a user named John Smith might configure Git:
 
 ~~~
-$ git config --global user.name "Vlad Dracula"
-$ git config --global user.email "vlad@tran.sylvan.ia"
+$ git config --global user.name "John Smith"
+$ git config --global user.email "john.smith@example.com"
 ~~~
 {: .language-bash}
 
-Please use your own name and email address instead of Dracula's. This user name and email will be associated with your subsequent Git activity,
+Please use your own name and email address instead of Johns's. This user name and email will be associated with your Git activity,
 which means that any changes pushed to
 [GitHub](https://github.com/),
 [BitBucket](https://bitbucket.org/),
@@ -37,12 +35,7 @@ which means that any changes pushed to
 another Git host server
 after this lesson will include this information.
 
-For this lesson, we will be interacting with [GitHub](https://github.com/) and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy]. 
-
->## Keeping your email private
->
->If you elect to use a private email address with GitHub, then use that same email address for the `user.email` value, e.g. `username@users.noreply.github.com` replacing `username` with your GitHub one.
-{: .callout}
+For this lesson, we will be using [GitHub](https://github.com/) and so the email address used should be the same as the one you will use when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy].
 
 
 > ## Line Endings
@@ -76,7 +69,7 @@ For this lesson, we will be interacting with [GitHub](https://github.com/) and s
 > 
 {: .callout}
 
-Dracula also has to set his favorite text editor, following this table:
+If you have a favorite text editor, you can change the configuration to use it, following the table below. For today's workshop, we will use Vim.
 
 | Editor             | Configuration command                            |
 |:-------------------|:-------------------------------------------------|
@@ -100,14 +93,12 @@ It is possible to reconfigure the text editor for Git whenever you want to chang
 
 > ## Exiting Vim
 >
-> Note that Vim is the default editor for many programs. If you haven't used Vim before and wish to exit a session without saving
-your changes, press <kbd>Esc</kbd> then type `:q!` and hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.
-> If you want to save your changes and quit, press <kbd>Esc</kbd> then type `:wq` and hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.
+> Vim can be confusing and intimidating for new users. To exit without saving changes, press <kbd>Esc</kbd> then type `:q!` and hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.
+> To save your changes and quit, press <kbd>Esc</kbd> then type `:wq` and hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.  You do not need to be a Shell power user or Vim expert to complete this workshop; all Vim commands will be provided for you.
 {: .callout}
 
 Git (2.28+) allows configuration of the name of the branch created when you
-initialize any new repository.  Dracula decides to use that feature to set it to `main` so 
-it matches the cloud service he will eventually use. 
+initialize any new repository.  We are going to change the default branch name to `main`. 
 
 ~~~
 $ git config --global init.defaultBranch main
@@ -148,48 +139,5 @@ $ git config --list
 You can change your configuration as many times as you want: use the
 same commands to choose another editor or update your email address.
 
-> ## Proxy
->
-> In some networks you need to use a
-> [proxy](https://en.wikipedia.org/wiki/Proxy_server). If this is the case, you
-> may also need to tell Git about the proxy:
->
-> ~~~
-> $ git config --global http.proxy proxy-url
-> $ git config --global https.proxy proxy-url
-> ~~~
-> {: .language-bash}
->
-> To disable the proxy, use
->
-> ~~~
-> $ git config --global --unset http.proxy
-> $ git config --global --unset https.proxy
-> ~~~
-> {: .language-bash}
-{: .callout}
-
-> ## Git Help and Manual
->
-> Always remember that if you forget the subcommands or options of a `git` command, you can access the
-> relevant list of options typing `git <command> -h` or access the corresponding Git manual by typing
-> `git <command> --help`, e.g.:
->
-> ~~~
-> $ git config -h
-> $ git config --help
-> ~~~
-> {: .language-bash}
->
-> While viewing the manual, remember the `:` is a prompt waiting for commands and you can press <kbd>Q</kbd> to exit the manual.
->
-> More generally, you can get the list of available `git` commands and further resources of the Git manual typing:
->
-> ~~~
-> $ git help
-> ~~~
-> {: .language-bash}
->
-{: .callout}
 
 [git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
