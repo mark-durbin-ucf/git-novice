@@ -15,13 +15,13 @@ layout: reference
 
 {:auto_ids}
 add
-:   To stage changes that you wish to commit. You can commit all the files that have been modified since your last commit, or just one. The `git add` command is used to stage changes you wish to commit. [View documentation for git add command](https://git-scm.com/docs/git-add)
+:   To stage changes that you wish to [commit](#commit). You can commit all the files that have been modified since your last commit, or just one. The `git add` command is used to stage changes you wish to commit. [View documentation for git add command](https://git-scm.com/docs/git-add)
 
 branch
-:   A branch in Git is a lightweight movable pointer to a commit. While working on a project, collaborators may make numerous branches to separate workflows such as feature development or bug fixes. The `git branch` command is used to create new branches. [View documentation for git branch command](https://git-scm.com/docs/git-branch)
+:   A branch in Git is a lightweight movable pointer to a [commit](#commit). While working on a project, collaborators may make numerous branches to separate workflows such as feature development or bug fixes. The `git branch` command is used to create new branches. [View documentation for git branch command](https://git-scm.com/docs/git-branch)
 
 changeset
-:   A group of changes to one or more files that are or will be added
+:   A group of changes to one or more files that are or will be [added](#add)
     to a single [commit](#commit) in a [version control](#version-control)
     [repository](#repository).
     
