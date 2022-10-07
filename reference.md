@@ -14,6 +14,12 @@ layout: reference
 ## Glossary
 
 {:auto_ids}
+add
+:   To stage changes that you wish to commit. You can commit all the files that have been modified since your last commit, or just one. The `git add` command is used to stage changes you wish to commit.
+
+branch
+:   A branch in Git is a lightweight movable pointer to a commit. While working on a project, collaborators may make numerous branches to separate workflows such as feature development or bug fixes.
+
 changeset
 :   A group of changes to one or more files that are or will be added
     to a single [commit](#commit) in a [version control](#version-control)
@@ -24,7 +30,7 @@ commit
     in a [version control](#version-control) [repository](#repository). As a noun,
     the result of committing, i.e. a recorded changeset in a repository.
     If a commit contains changes to multiple files,
-    all of the changes are recorded together.
+    all of the changes are recorded together. The `git commit` command is used to create a commit.
 
 conflict
 :   A change made by one user of a [version control system](#version-control)
@@ -38,11 +44,17 @@ HTTP
 
 merge
 :   (a repository): To reconcile two sets of changes to a
-    [repository](#repository).
+    [repository](#repository). The `git merge` command is used to merge the sets of changes.
 
 protocol
 :   A set of rules that define how one computer communicates with another.
     Common protocols on the Internet include [HTTP](#http) and [SSH](#ssh).
+
+pull
+:   To bring in updates from a [remote](#remote) [repository](#repository) repository to a local repository. The `git pull` command is used to pull changes from the associated remote branch to a branch in a local repository.
+
+push
+:   To send updates from a local [repository](#repository) to a remote repository. The `git push` command is used to upload local [repository](#repository) content to a remote repository.
 
 remote
 :   (of a repository) A version control [repository](#repository) connected to another,
