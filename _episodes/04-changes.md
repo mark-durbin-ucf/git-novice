@@ -22,7 +22,7 @@ First let's make sure we're still in the right directory.
 You should be in the `planets` directory.
 
 ~~~
-$ cd ~/Desktop/planets
+$ cd ~/planets
 ~~~
 {: .language-bash}
 
@@ -178,7 +178,7 @@ $ git log
 
 ~~~
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: FIRST_NAME LAST_NAME <your_email@example.com>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base
@@ -203,7 +203,7 @@ and the log message Git was given when the commit was created.
 > (and so that we can't accidentally edit or delete an old version).
 {: .callout}
 
-Now suppose Dracula adds more information to the file.
+We will add more information to the file.
 (Again, we'll edit with `nano` and then `cat` the file to show its contents;
 you may use a different editor, and don't need to `cat`.)
 
@@ -215,7 +215,7 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons would make for interesting tides, if the planet had oceans
 ~~~
 {: .output}
 
@@ -262,7 +262,7 @@ index df0654a..315bf3a 100644
 +++ b/mars.txt
 @@ -1 +1,2 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons would make for interesting tides, if the planet had oceans
 ~~~
 {: .output}
 
@@ -307,12 +307,12 @@ Let's fix that:
 
 ~~~
 $ git add mars.txt
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add notes about Mars' moons"
 ~~~
 {: .language-bash}
 
 ~~~
-[main 34961b1] Add concerns about effects of Mars' moons on Wolfman
+[main 34961b1] Add notes about Mars' moons
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -370,8 +370,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons would make for interesting tides, if the planet had oceans
+The lack of humidity is good for my hair
 ~~~
 {: .output}
 
@@ -387,8 +387,8 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+ The two moons would make for interesting tides, if the planet had oceans
++The lack of humidity is good for my hair
 ~~~
 {: .output}
 
@@ -423,8 +423,8 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+ The two moons would make for interesting tides, if the planet had oceans
++The lack of humidity is good for my hair
 ~~~
 {: .output}
 
@@ -434,12 +434,12 @@ and what's in the staging area.
 Let's save our changes:
 
 ~~~
-$ git commit -m "Discuss concerns about Mars' climate for Mummy"
+$ git commit -m "Discuss concerns about Mars' climate for my hair"
 ~~~
 {: .language-bash}
 
 ~~~
-[main 005937f] Discuss concerns about Mars' climate for Mummy
+[main 005937f] Discuss concerns about Mars' climate for my hair
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -466,19 +466,19 @@ $ git log
 
 ~~~
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: FIRST_NAME LAST_NAME <your_email@example.com>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-    Discuss concerns about Mars' climate for Mummy
+    Discuss concerns about Mars' climate for my hair
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: FIRST_NAME LAST_NAME <your_email@example.com>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
-    Add concerns about effects of Mars' moons on Wolfman
+    Add notes about Mars' moons
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: FIRST_NAME LAST_NAME <your_email@example.com>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base
@@ -522,10 +522,10 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 >
 > ~~~
 > commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
-> Author: Vlad Dracula <vlad@tran.sylvan.ia>
+> Author: FIRST_NAME LAST_NAME <your_email@example.com>
 > Date:   Thu Aug 22 10:14:07 2013 -0400
 >
->    Discuss concerns about Mars' climate for Mummy
+>    Discuss concerns about Mars' climate for my hair
 > ~~~
 > {: .output}
 >
@@ -537,7 +537,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> 005937f (HEAD -> main) Discuss concerns about Mars' climate for Mummy
+> 005937f (HEAD -> main) Discuss concerns about Mars' climate for my hair
 > 34961b1 Add concerns about effects of Mars' moons on Wolfman
 > f22b25e Start notes on Mars as a base
 > ~~~
@@ -554,8 +554,8 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f (HEAD -> main) Discuss concerns about Mars' climate for Mummy
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
+> * 005937f (HEAD -> main) Discuss concerns about Mars' climate for my hair
+> * 34961b1 Add notes about Mars' moons
 > * f22b25e Start notes on Mars as a base
 > ~~~
 > {: .output}
