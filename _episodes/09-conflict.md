@@ -30,8 +30,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons would make for interesting tides, if the planet had oceans
+The lack of humidity is good for my hair
 ~~~
 {: .output}
 
@@ -45,9 +45,9 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-This line added to Wolfman's copy
+The two moons would make for interesting tides, if the planet had oceans
+The lack of humidity is good for my hair
+This line added to collaborator's copy
 ~~~
 {: .output}
 
@@ -55,12 +55,12 @@ and then push the change to GitHub:
 
 ~~~
 $ git add mars.txt
-$ git commit -m "Add a line in our home copy"
+$ git commit -m "Add a line in collaborator's copy"
 ~~~
 {: .language-bash}
 
 ~~~
-[main 5ae9631] Add a line in our home copy
+[main 5ae9631] Add a line in collaborator's  copy
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -78,7 +78,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To https://github.com/vlad/planets.git
+To https://github.com/OWNER/planets.git
    29aba7c..dabb4c8  main -> main
 ~~~
 {: .output}
@@ -95,9 +95,9 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
-We added a different line in the other copy
+The two moons would make for interesting tides, if the planet had oceans
+The lack of humidity is good for my hair
+This is a line added to the owner's copy
 ~~~
 {: .output}
 
@@ -105,7 +105,7 @@ We can commit the change locally:
 
 ~~~
 $ git add mars.txt
-$ git commit -m "Add a line in my copy"
+$ git commit -m "Add a line in the owner's copy"
 ~~~
 {: .language-bash}
 
@@ -123,9 +123,9 @@ $ git push origin main
 {: .language-bash}
 
 ~~~
-To https://github.com/vlad/planets.git
+To https://github.com/OWNER/planets.git
  ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'https://github.com/vlad/planets.git'
+error: failed to push some refs to 'https://github.com/OWNER/planets.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -153,7 +153,7 @@ remote: Counting objects: 100% (5/5), done.
 remote: Compressing objects: 100% (1/1), done.
 remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/vlad/planets
+From https://github.com/OWNER/planets
  * branch            main     -> FETCH_HEAD
     29aba7c..dabb4c8  main     -> origin/main
 Auto-merging mars.txt
@@ -176,12 +176,12 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons would make for interesting tides, if the planet had oceans
+The lack of humidity is good for my hair
 <<<<<<< HEAD
-We added a different line in the other copy
+This is a line added to the owner's copy
 =======
-This line added to Wolfman's copy
+This line added to collaborator's copy
 >>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
 ~~~
 {: .output}
@@ -206,8 +206,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons would make for interesting tides, if the planet had oceans
+The lack of humidity is good for my hair
 We removed the conflict on this line
 ~~~
 {: .output}
@@ -259,7 +259,7 @@ Compressing objects: 100% (6/6), done.
 Writing objects: 100% (6/6), 645 bytes | 645.00 KiB/s, done.
 Total 6 (delta 4), reused 0 (delta 0)
 remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
-To https://github.com/vlad/planets.git
+To https://github.com/OWNER/planets.git
    dabb4c8..2abf2b1  main -> main
 ~~~
 {: .output}
@@ -279,7 +279,7 @@ remote: Counting objects: 100% (10/10), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
 Unpacking objects: 100% (6/6), done.
-From https://github.com/vlad/planets
+From https://github.com/OWNER/planets
  * branch            main     -> FETCH_HEAD
     dabb4c8..2abf2b1  main     -> origin/main
 Updating dabb4c8..2abf2b1
@@ -298,8 +298,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The two moons would make for interesting tides, if the planet had oceans
+The lack of humidity is good for my hair
 We removed the conflict on this line
 ~~~
 {: .output}
