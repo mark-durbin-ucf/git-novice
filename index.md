@@ -43,5 +43,5 @@ to be shared can and should be stored in a version control system.
 
 > ## Prerequisites
 >
-> In this lesson we use Git from the Unix Shell. Please do not be intimidated. All of the commands will be provided for you, and it is suggested that you copy/paste the commands if you are unfamiliar with the Unix Shell, so that you can keep pace with the lesson and focus on learning Git.
+> In this lesson we use Git from the Unix Shell. Please do not be intimidated. All of the commands will be provided for you, and it is suggested that you copy/paste the commands if you are unfamiliar with the Unix Shell, so that you can keep pace with the lesson and focus on learning Git. When copying, do not include the "$" before each command.
 {: .prereq}
