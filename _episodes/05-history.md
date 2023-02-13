@@ -1,6 +1,6 @@
 ---
 title: Exploring History
-teaching: 25
+teaching: 30
 exercises: 0
 questions:
 - "How can I identify old versions of files?"
