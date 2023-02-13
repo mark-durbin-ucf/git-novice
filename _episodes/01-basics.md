@@ -1,6 +1,6 @@
 ---
 title: Automated Version Control
-teaching: 5
+teaching: 15
 exercises: 0
 questions:
 - "What is version control and why should I use it?"
