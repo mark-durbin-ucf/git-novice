@@ -1,6 +1,6 @@
 ---
 title: Creating a Repository
-teaching: 10
+teaching: 15
 exercises: 0
 questions:
 - "Where does Git store information?"
