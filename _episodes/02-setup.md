@@ -1,6 +1,6 @@
 ---
 title: Setting Up Git
-teaching: 5
+teaching: 30
 exercises: 0
 questions:
 - "How do I get set up to use Git?"
@@ -10,6 +10,7 @@ objectives:
 keypoints:
 -   "Use `git config` with the `--global` option to configure a user name, email address, editor, and other preferences once per machine."
 ---
+It's time to install Git on your PC, so let's take a detour over to the <a href="{{ relative_root_path }}{% link setup.md %}">setup page</a> and return once we've finished installing Git.
 
 When we use Git on a new computer for the first time,
 we need to configure a few things:
