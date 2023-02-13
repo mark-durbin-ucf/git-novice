@@ -1,6 +1,6 @@
 ---
 title: Tracking Changes
-teaching: 30
+teaching: 25
 exercises: 0
 questions:
 - "How do I record changes in Git?"
