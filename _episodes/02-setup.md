@@ -5,6 +5,7 @@ exercises: 0
 questions:
 - "How do I get set up to use Git?"
 objectives:
+- Install Git
 - "Configure `git` the first time it is used on a computer."
 - "Understand the meaning of the `--global` configuration flag."
 keypoints:
