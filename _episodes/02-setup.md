@@ -79,7 +79,7 @@ For this lesson, we will be using [GitHub](https://github.com/) and so the email
 > 
 {: .callout}
 
-If you have a favorite text editor, you can change the configuration to use it, following the table below. For today's workshop, we will use the Nano text editor.
+If you have a favorite text editor, you can change the configuration to use it, following the table below. For today's workshop, we will use the nano text editor. Copy the configuration command for nano from the table below, and run it in your terminal.
 
 | Editor             | Configuration command                            |
 |:-------------------|:-------------------------------------------------|
