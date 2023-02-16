@@ -13,6 +13,14 @@ keypoints:
 ---
 It's time to install Git on your PC, so let's take a detour over to the <a href="/git-novice/{% link setup.md %}">setup page</a> and return once we've finished installing Git.
 
+Now that Git is installed, we can open a terminal to interface with Git. 
+
+To open a terminal in MacOS, follow these instructions: [https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)
+
+To open a terminal in Windows after installing Git for Windows, press the Windows key on your keyboard, type Git Bash, and press Enter.
+
+For Linux, you will need to refer to the documentation for your Linux distribution.
+
 When we use Git on a new computer for the first time,
 we need to configure a few things:
 
