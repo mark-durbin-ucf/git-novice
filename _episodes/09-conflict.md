@@ -143,7 +143,7 @@ What we have to do is pull the changes from GitHub,
 Let's start by pulling:
 
 ~~~
-$ git pull origin main
+$ git pull origin main --no-rebase
 ~~~
 {: .language-bash}
 
