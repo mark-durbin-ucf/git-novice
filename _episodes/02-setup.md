@@ -37,7 +37,7 @@ $ git config --global user.email "john.smith@example.com"
 ~~~
 {: .language-bash}
 
-Please use your own name and email address instead of Johns's. This user name and email will be associated with your Git activity,
+Please use your own name and email address instead of John's. This user name and email will be associated with your Git activity,
 which means that any changes pushed to
 [GitHub](https://github.com/),
 [BitBucket](https://bitbucket.org/),
